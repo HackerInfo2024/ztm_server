@@ -10,7 +10,7 @@ def reliable_recv():
         data = ''
         while True:
            try:
-              data = data + target.recv(1024).decode().rstip()
+              data = data + target.recv(1024).decode().rstrip()
               return json.loads(data)
            except ValueError:
               continue
