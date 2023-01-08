@@ -1,3 +1,10 @@
+#First we start off by importing the libraries that we will need (socket, json, os)
+#Socket is basically communication between two endpoints (server and target)
+#A format (standarized) used to transfer data as text that can be seen over a network
+#Provides the facility to establish the interaction between the user and the operating system
+
+#This is still a work in progress and will try to update more notes when I get a chance
+
 import socket
 import json
 import os
@@ -57,3 +64,6 @@ sock.listen(5)
 target, ip = sock.accept()
 print('[+] Target Connected From: ' + str(ip))
 target_communication()
+
+
+
